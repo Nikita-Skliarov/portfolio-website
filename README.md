@@ -1,31 +1,17 @@
-# TETPИC — terminal Tetris (placeholder)
+# nikita-skliarov-napriahlo.nl
 
-A tiny, dependency-free Tetris rendered in the style of the **original 1984
-Electronika 60** version — green phosphor terminal, blocks drawn as `[]`
-characters, CRT scanlines.
+Personal portfolio of **Nikita Skliarov-Napriahlo** — Full Stack Software
+Developer at The Freight Hero B.V.
 
-This is a **temporary placeholder** for a slot in my portfolio and will be
-replaced later.
+## Stack
+
+Plain HTML / CSS / JavaScript. No build step, no dependencies.
+Deployed on Vercel.
 
 ## Run locally
-
-It's plain static files — just open `index.html`, or serve the folder:
 
 ```bash
 npx serve .
 ```
 
-## Controls
-
-| Key | Action |
-| --- | --- |
-| ← → | Move |
-| ↑ / Z | Rotate |
-| ↓ | Soft drop |
-| Space | Hard drop |
-| P | Pause |
-| R | Restart |
-
-## Stack
-
-Vanilla HTML / CSS / JavaScript. No build step. Deployed on Vercel.
+Or just open `index.html`.
