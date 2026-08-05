@@ -9,7 +9,7 @@ const translations = {
     'nav.skills': 'Skills',
     'nav.contact': 'Contact',
     'hero.kicker': 'Full stack developer · Nederland',
-    'hero.sub': 'Ik bouw multi-tenant SaaS-platformen, van databaseschema tot de laatste pixel. Op dit moment werk ik aan freight-tech bij <a href="https://thefreighthero.com" target="_blank" rel="noopener">The&nbsp;Freight&nbsp;Hero&nbsp;B.V.</a>',
+    'hero.sub': 'Ik bouw multi-tenant SaaS-platformen, van databaseschema tot de laatste pixel. Op dit moment werk ik aan freight-tech bij <a href="https://thefreighthero.nl" target="_blank" rel="noopener">The&nbsp;Freight&nbsp;Hero&nbsp;B.V.</a>',
     'hero.ctaWork': 'Bekijk mijn werk',
     'hero.ctaContact': 'Stuur een bericht',
     'hero.scroll': 'scroll ↓',
@@ -20,6 +20,10 @@ const translations = {
     'work.title': 'Uitgelicht werk',
     'work.tfh.tag': 'Freight tech · SaaS',
     'work.tfh.text': 'Multi-tenant platform voor expediteurs: direct offertes rekenen, een tariefmotor met ruim 100 kostensoorten, zendingsbeheer en Nederlandse btw-logica. Vervangt de spreadsheets waar de meeste expediteurs nog in werken.',
+    'work.tfh.url': 'https://thefreighthero.nl',
+    'work.tfh.link': 'thefreighthero.nl →',
+    'work.care.tag': 'Goonys · klantwerk',
+    'work.care.text': 'Onepager voor een ambulante zorgaanbieder in Hengelo. Ik bouw eraan mee binnen Goonys: Angular 21, Tailwind en hosting op Vercel.',
     'work.ticket.tag': 'Goonys · supporttool',
     'work.ticket.title': 'Goonys Ticket Portal',
     'work.ticket.text': 'Multi-tenant ticketsysteem van Goonys: elke query, route en view ziet alleen de eigen klant. De bijbehorende browserextensie stuurt bij een melding automatisch een screenshot, consolelogs en netwerkdata mee. Draait als eerste bij The Freight Hero.',
@@ -62,6 +66,10 @@ const translations = {
     'work.title': 'Selected work',
     'work.tfh.tag': 'Freight tech · SaaS',
     'work.tfh.text': 'Multi-tenant freight forwarding platform: instant quoting, a tariff engine with over 100 charge types, shipment lifecycle management and Dutch VAT logic. It replaces the spreadsheets most forwarders still run on.',
+    'work.tfh.url': 'https://thefreighthero.com',
+    'work.tfh.link': 'thefreighthero.com →',
+    'work.care.tag': 'Goonys · client work',
+    'work.care.text': 'One-page site for an outpatient care provider in Hengelo. I build on it as part of Goonys: Angular 21, Tailwind and hosting on Vercel.',
     'work.ticket.tag': 'Goonys · support tooling',
     'work.ticket.title': 'Goonys Ticket Portal',
     'work.ticket.text': "Goonys' multi-tenant ticket system: every query, route and view sees its own customer only. The companion browser extension attaches a screenshot, console logs and network data to a ticket automatically. The Freight Hero runs it first.",
@@ -104,6 +112,10 @@ const translations = {
     'work.title': 'Вибрані роботи',
     'work.tfh.tag': 'Freight tech · SaaS',
     'work.tfh.text': 'Мультитенантна платформа для експедиторів: миттєві котирування, тарифний движок із понад 100 типами витрат, керування життєвим циклом відправлень і нідерландська логіка ПДВ. Замінює таблиці, в яких досі працює більшість експедиторів.',
+    'work.tfh.url': 'https://thefreighthero.com',
+    'work.tfh.link': 'thefreighthero.com →',
+    'work.care.tag': 'Goonys · робота для клієнта',
+    'work.care.text': 'Односторінковий сайт для служби амбулаторного догляду в Хенгело. Я беру участь у розробці в межах Goonys: Angular 21, Tailwind і хостинг на Vercel.',
     'work.ticket.tag': 'Goonys · підтримка',
     'work.ticket.title': 'Goonys Ticket Portal',
     'work.ticket.text': 'Мультитенантна система тикетів від Goonys: кожен запит, маршрут і екран бачать лише свого клієнта. Браузерне розширення саме додає до тикета скриншот, логи консолі й мережеві дані. Першим її використовує The Freight Hero.',
@@ -146,6 +158,10 @@ const translations = {
     'work.title': 'Избранные работы',
     'work.tfh.tag': 'Freight tech · SaaS',
     'work.tfh.text': 'Мультитенантная платформа для экспедиторов: мгновенные котировки, тарифный движок с более чем 100 типами расходов, управление жизненным циклом отправлений и нидерландская логика НДС. Заменяет таблицы, в которых до сих пор работает большинство экспедиторов.',
+    'work.tfh.url': 'https://thefreighthero.com',
+    'work.tfh.link': 'thefreighthero.com →',
+    'work.care.tag': 'Goonys · работа для клиента',
+    'work.care.text': 'Одностраничный сайт для службы амбулаторного ухода в Хенгело. Я участвую в разработке в составе Goonys: Angular 21, Tailwind и хостинг на Vercel.',
     'work.ticket.tag': 'Goonys · поддержка',
     'work.ticket.title': 'Goonys Ticket Portal',
     'work.ticket.text': 'Мультитенантная система тикетов от Goonys: каждый запрос, роут и экран видят только своего клиента. Браузерное расширение само прикладывает к тикету скриншот, логи консоли и сетевые данные. Первым её использует The Freight Hero.',
@@ -194,6 +210,11 @@ function applyLang(lang) {
     if (el.hasAttribute('data-i18n-html')) el.innerHTML = value;
     else el.textContent = value;
   });
+
+  // The Freight Hero uses .nl for Dutch visitors and .com for the rest.
+  const tfhLink = document.getElementById('tfhLink');
+  tfhLink.href = dict['work.tfh.url'];
+  tfhLink.textContent = dict['work.tfh.link'];
 
   document.querySelectorAll('.lang-switch button').forEach((btn) => {
     btn.setAttribute('aria-pressed', String(btn.dataset.lang === lang));
