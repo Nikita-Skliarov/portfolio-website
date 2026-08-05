@@ -20,3 +20,16 @@ if (prefersReducedMotion || !('IntersectionObserver' in window)) {
 }
 
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// Google Analytics 4. Empty GA_ID = disabled; fill in the measurement ID to enable.
+const GA_ID = '';
+if (GA_ID) {
+  const s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { dataLayer.push(arguments); };
+  gtag('js', new Date());
+  gtag('config', GA_ID);
+}
