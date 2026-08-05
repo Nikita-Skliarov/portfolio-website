@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.nikita-skliarov-napriahlo.nl/</loc>
+    <lastmod>2026-08-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.nikita-skliarov-napriahlo.nl/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nikita-skliarov-napriahlo.nl/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.nikita-skliarov-napriahlo.nl/?lang=uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.nikita-skliarov-napriahlo.nl/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nikita-skliarov-napriahlo.nl/"/>
+  </url>
+  <url>
+    <loc>https://www.nikita-skliarov-napriahlo.nl/?lang=en</loc>
+    <lastmod>2026-08-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.nikita-skliarov-napriahlo.nl/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nikita-skliarov-napriahlo.nl/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.nikita-skliarov-napriahlo.nl/?lang=uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.nikita-skliarov-napriahlo.nl/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nikita-skliarov-napriahlo.nl/"/>
+  </url>
+  <url>
+    <loc>https://www.nikita-skliarov-napriahlo.nl/?lang=uk</loc>
+    <lastmod>2026-08-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.nikita-skliarov-napriahlo.nl/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nikita-skliarov-napriahlo.nl/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.nikita-skliarov-napriahlo.nl/?lang=uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.nikita-skliarov-napriahlo.nl/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nikita-skliarov-napriahlo.nl/"/>
+  </url>
+  <url>
+    <loc>https://www.nikita-skliarov-napriahlo.nl/?lang=ru</loc>
+    <lastmod>2026-08-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.nikita-skliarov-napriahlo.nl/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nikita-skliarov-napriahlo.nl/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.nikita-skliarov-napriahlo.nl/?lang=uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.nikita-skliarov-napriahlo.nl/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nikita-skliarov-napriahlo.nl/"/>
+  </url>
+</urlset>

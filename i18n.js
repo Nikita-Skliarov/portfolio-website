@@ -198,11 +198,19 @@ function storageSet(key, value) {
   try { localStorage.setItem(key, value); } catch { /* best-effort */ }
 }
 
+const SITE_URL = 'https://www.nikita-skliarov-napriahlo.nl/';
+
+function langUrl(lang) {
+  return lang === 'nl' ? SITE_URL : SITE_URL + '?lang=' + lang;
+}
+
 function applyLang(lang) {
   const dict = translations[lang];
   document.documentElement.lang = lang;
   document.title = dict['meta.title'];
   document.querySelector('meta[name="description"]').setAttribute('content', dict['meta.description']);
+  // Each language variant self-canonicalizes so the hreflang cluster stays valid.
+  document.querySelector('link[rel="canonical"]').setAttribute('href', langUrl(lang));
 
   document.querySelectorAll('[data-i18n]').forEach((el) => {
     const value = dict[el.getAttribute('data-i18n')];
@@ -224,10 +232,21 @@ function applyLang(lang) {
 function setLang(lang) {
   storageSet(LANG_STORAGE_KEY, lang);
   applyLang(lang);
+  // Keep the address bar in sync so the shown URL matches the sitemap/hreflang URLs.
+  try {
+    const url = lang === 'nl' ? location.pathname : location.pathname + '?lang=' + lang;
+    history.replaceState(null, '', url);
+  } catch { /* file:// and some embeds refuse replaceState */ }
 }
 
+// Priority: explicit ?lang= URL (search engines and shared links), then the
+// visitor's stored choice, then Dutch.
+const paramLang = new URLSearchParams(location.search).get('lang');
 const storedLang = storageGet(LANG_STORAGE_KEY);
-applyLang(SUPPORTED_LANGS.includes(storedLang) ? storedLang : 'nl');
+const initialLang = SUPPORTED_LANGS.includes(paramLang) ? paramLang
+  : SUPPORTED_LANGS.includes(storedLang) ? storedLang
+  : 'nl';
+applyLang(initialLang);
 
 document.querySelectorAll('.lang-switch button').forEach((btn) => {
   btn.addEventListener('click', () => {
@@ -247,7 +266,7 @@ function hideTip() {
 }
 
 const browserIsEnglish = (navigator.language || '').toLowerCase().startsWith('en');
-if (browserIsEnglish && !storedLang && !storageGet(TIP_STORAGE_KEY)) {
+if (browserIsEnglish && !paramLang && !storedLang && !storageGet(TIP_STORAGE_KEY)) {
   tip.hidden = false;
 }
 

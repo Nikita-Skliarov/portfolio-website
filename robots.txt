@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.nikita-skliarov-napriahlo.nl/sitemap.xml
