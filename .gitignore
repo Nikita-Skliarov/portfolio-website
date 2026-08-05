@@ -1,4 +1,6 @@
 node_modules/
 .vercel
+plans/
+runs/
 .DS_Store
 *.log

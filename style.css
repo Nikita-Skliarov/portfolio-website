@@ -66,6 +66,8 @@ main, .nav, .footer { position: relative; z-index: 2; }
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap: 0.6rem;
   padding: 1.4rem clamp(1.2rem, 5vw, 4rem);
 }
 
@@ -367,6 +369,73 @@ main, .nav, .footer { position: relative; z-index: 2; }
 }
 
 .footer-note { font-family: var(--font-mono); }
+
+/* ============ language switch & tip ============ */
+.lang-switch {
+  display: flex;
+  gap: 0.2rem;
+  padding: 0.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+}
+
+.lang-switch button {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  background: none;
+  border: none;
+  border-radius: 999px;
+  padding: 0.3rem 0.55rem;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+}
+
+.lang-switch button:hover,
+.lang-switch button:focus-visible { color: var(--text); }
+
+.lang-switch button[aria-pressed="true"] {
+  background: var(--grad);
+  color: #0a0a0f;
+  font-weight: 500;
+}
+
+.lang-tip {
+  position: fixed;
+  right: 1.2rem;
+  bottom: 1.2rem;
+  z-index: 5;
+  max-width: 21rem;
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.4rem;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+}
+
+.lang-tip p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
+.lang-tip-actions { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+
+.lang-tip button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.lang-tip .btn { font-size: 0.85rem; padding: 0.55rem 1.1rem; }
+
+.lang-tip .btn-primary { border: none; }
+
+.lang-tip .btn-ghost { background: none; }
+
+@media (max-width: 480px) {
+  .lang-tip { left: 1.2rem; right: 1.2rem; max-width: none; }
+}
 
 /* ============ reveal animation ============ */
 .reveal {
