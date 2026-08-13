@@ -1,3 +1,7 @@
+// Content is visible by default; this class opts in to the hidden reveal state,
+// so a JS failure can never leave the page blank.
+document.documentElement.classList.add('js');
+
 // Scroll-reveal: fade sections in as they enter the viewport.
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const revealEls = document.querySelectorAll('.reveal');
