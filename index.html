@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nikita Skliarov-Napriahlo · Full stack developer</title>
-  <meta name="description" content="Portfolio van Nikita Skliarov-Napriahlo, full stack developer bij The Freight Hero B.V. Multi-tenant SaaS, freight-tech en webprojecten." />
+  <meta name="description" content="Portfolio van Nikita Skliarov-Napriahlo, full stack developer bij The Freight Hero B.V. Multi-tenant SaaS, freight-tech, webprojecten en Promobo." />
   <meta property="og:title" content="Nikita Skliarov-Napriahlo · Full stack developer" />
-  <meta property="og:description" content="Multi-tenant SaaS, freight-tech en webprojecten. Gevestigd in Nederland." />
+  <meta property="og:description" content="Multi-tenant SaaS, freight-tech, webprojecten en Promobo. Gevestigd in Nederland." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.nikita-skliarov-napriahlo.nl/" />
   <meta property="og:site_name" content="Nikita Skliarov-Napriahlo" />
@@ -51,6 +51,7 @@
           "name": "The Freight Hero B.V.",
           "url": "https://thefreighthero.com"
         },
+        "memberOf": { "@id": "https://promobo.nl/#organization" },
         "sameAs": [
           "https://www.linkedin.com/in/nikita-skliarov-napriahlo-46a2752b1/",
           "https://github.com/Nikita-Skliarov"
@@ -59,6 +60,18 @@
         "knowsAbout": [
           "Multi-tenant SaaS", "TypeScript", "Angular", "Next.js", "Vue.js",
           "Node.js", "tRPC", "Prisma", "PostgreSQL", "PHP", "Python", "C#"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://promobo.nl/#organization",
+        "name": "Promobo",
+        "url": "https://promobo.nl",
+        "description": "Subscription websites for entrepreneurs and clubs in Twente: one fixed monthly price instead of hourly billing, and the site just keeps running.",
+        "areaServed": "Twente, Netherlands",
+        "founder": [
+          { "@id": "https://www.nikita-skliarov-napriahlo.nl/#person" },
+          { "@type": "Person", "name": "Jordi Raanhuis" }
         ]
       },
       {
@@ -104,7 +117,7 @@
       <p class="hero-sub reveal" data-i18n="hero.sub" data-i18n-html>
         Ik bouw multi-tenant SaaS-platformen, van databaseschema tot de laatste
         pixel. Op dit moment werk ik aan freight-tech bij
-        <a href="https://thefreighthero.com" target="_blank" rel="noopener">The&nbsp;Freight&nbsp;Hero&nbsp;B.V.</a>
+        <a href="https://thefreighthero.nl" target="_blank" rel="noopener">The&nbsp;Freight&nbsp;Hero&nbsp;B.V.</a>
       </p>
       <div class="hero-cta reveal">
         <a class="btn btn-primary" href="#work" data-i18n="hero.ctaWork">Bekijk mijn werk</a>
@@ -169,6 +182,21 @@
         </article>
 
         <article class="card reveal">
+          <div class="card-tag" data-i18n="work.promo.tag">Partnerschap</div>
+          <h3>Promobo</h3>
+          <p data-i18n="work.promo.text">
+            Promobo run ik samen met Jordi Raanhuis naast ons werk: websites op
+            abonnement voor ondernemers en clubs in Twente. Eén vast bedrag per
+            maand, en de site blijft gewoon draaien. Uurtje-factuurtje doen we
+            niet.
+          </p>
+          <ul class="card-stack">
+            <li>Web</li><li>Subscriptions</li><li>Hosting</li>
+          </ul>
+          <a class="card-link" href="https://promobo.nl" target="_blank" rel="noopener">promobo.nl →</a>
+        </article>
+
+        <article class="card reveal">
           <div class="card-tag" data-i18n="work.ticket.tag">Goonys · supporttool</div>
           <h3 data-i18n="work.ticket.title">Goonys Ticket Portal</h3>
           <p data-i18n="work.ticket.text">
@@ -209,20 +237,6 @@
           <a class="card-link" href="https://careofyh.nl" target="_blank" rel="noopener">careofyh.nl →</a>
         </article>
 
-        <article class="card reveal">
-          <div class="card-tag" data-i18n="work.promo.tag">Partnerschap</div>
-          <h3>Promobo</h3>
-          <p data-i18n="work.promo.text">
-            Promobo run ik samen met Jordi Raanhuis naast ons werk: websites op
-            abonnement voor ondernemers en clubs in Twente. Eén vast bedrag per
-            maand, en de site blijft gewoon draaien. Uurtje-factuurtje doen we
-            niet.
-          </p>
-          <ul class="card-stack">
-            <li>Web</li><li>Subscriptions</li><li>Hosting</li>
-          </ul>
-          <a class="card-link" href="https://promobo.nl" target="_blank" rel="noopener">promobo.nl →</a>
-        </article>
       </div>
     </section>
 
@@ -288,7 +302,7 @@
   </footer>
 
   <!-- Language tip for English-browser visitors (shown by i18n.js) -->
-  <div class="lang-tip" id="langTip" hidden>
+  <div class="lang-tip" id="langTip" lang="en" role="status" hidden>
     <p>This site opens in Dutch. You can switch language in the menu at the top, any time.</p>
     <div class="lang-tip-actions">
       <button type="button" class="btn btn-primary" id="langTipSwitch">View in English</button>

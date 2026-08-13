@@ -3,7 +3,7 @@
 const translations = {
   nl: {
     'meta.title': 'Nikita Skliarov-Napriahlo · Full stack developer',
-    'meta.description': 'Portfolio van Nikita Skliarov-Napriahlo, full stack developer bij The Freight Hero B.V. Multi-tenant SaaS, freight-tech en webprojecten.',
+    'meta.description': 'Portfolio van Nikita Skliarov-Napriahlo, full stack developer bij The Freight Hero B.V. Multi-tenant SaaS, freight-tech, webprojecten en Promobo.',
     'nav.about': 'Over mij',
     'nav.work': 'Werk',
     'nav.skills': 'Skills',
@@ -54,7 +54,7 @@ const translations = {
 
   en: {
     'meta.title': 'Nikita Skliarov-Napriahlo · Full Stack Developer',
-    'meta.description': 'Portfolio of Nikita Skliarov-Napriahlo, full stack developer at The Freight Hero B.V. Multi-tenant SaaS, freight tech and web projects.',
+    'meta.description': 'Portfolio of Nikita Skliarov-Napriahlo, full stack developer at The Freight Hero B.V. Multi-tenant SaaS, freight tech, web projects and Promobo.',
     'nav.about': 'About',
     'nav.work': 'Work',
     'nav.skills': 'Skills',
@@ -105,7 +105,7 @@ const translations = {
 
   uk: {
     'meta.title': 'Nikita Skliarov-Napriahlo · Full stack розробник',
-    'meta.description': 'Портфоліо Nikita Skliarov-Napriahlo, full stack розробника в The Freight Hero B.V. Мультитенантний SaaS, freight-tech і вебпроєкти.',
+    'meta.description': 'Портфоліо Nikita Skliarov-Napriahlo, full stack розробника в The Freight Hero B.V. Мультитенантний SaaS, freight-tech, вебпроєкти та Promobo.',
     'nav.about': 'Про мене',
     'nav.work': 'Роботи',
     'nav.skills': 'Навички',
@@ -156,7 +156,7 @@ const translations = {
 
   ru: {
     'meta.title': 'Nikita Skliarov-Napriahlo · Full stack разработчик',
-    'meta.description': 'Портфолио Nikita Skliarov-Napriahlo, full stack разработчика в The Freight Hero B.V. Мультитенантный SaaS, freight-tech и веб-проекты.',
+    'meta.description': 'Портфолио Nikita Skliarov-Napriahlo, full stack разработчика в The Freight Hero B.V. Мультитенантный SaaS, freight-tech, веб-проекты и Promobo.',
     'nav.about': 'Обо мне',
     'nav.work': 'Работы',
     'nav.skills': 'Навыки',
