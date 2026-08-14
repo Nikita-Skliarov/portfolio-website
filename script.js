@@ -28,3 +28,10 @@ document.getElementById('year').textContent = new Date().getFullYear();
 // Vercel Web Analytics init stub (the queue for /_vercel/insights/script.js,
 // which index.html loads deferred). Lives here because the CSP bans inline scripts.
 window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+
+// CTA click events, so the next iteration of this page can argue from data.
+document.querySelectorAll('[data-track]').forEach((el) => {
+  el.addEventListener('click', () => {
+    window.va('event', { name: el.dataset.track });
+  });
+});

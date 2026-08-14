@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nikita Skliarov-Napriahlo · Full stack developer</title>
-  <meta name="description" content="Portfolio van Nikita Skliarov-Napriahlo, full stack developer bij The Freight Hero B.V. Multi-tenant SaaS, freight-tech, webprojecten en Promobo." />
-  <meta property="og:title" content="Nikita Skliarov-Napriahlo · Full stack developer" />
-  <meta property="og:description" content="Multi-tenant SaaS, freight-tech, webprojecten en Promobo. Gevestigd in Nederland." />
+  <title>Nikita Skliarov-Napriahlo · Websites op abonnement · Full stack developer</title>
+  <meta name="description" content="Websites op abonnement voor ondernemers en clubs in Twente, via Promobo. Plus het full stack werk van Nikita Skliarov-Napriahlo: The Freight Hero, Goonys en eigen projecten. Alles op deze pagina staat live." />
+  <meta property="og:title" content="Nikita Skliarov-Napriahlo · Websites op abonnement · Full stack developer" />
+  <meta property="og:description" content="Websites op abonnement voor ondernemers en clubs in Twente, via Promobo. Eén vast bedrag per maand, geen uurtje-factuurtje. Alles op deze pagina staat live." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.nikita-skliarov-napriahlo.nl/" />
   <meta property="og:site_name" content="Nikita Skliarov-Napriahlo" />
@@ -58,8 +58,8 @@
         ],
         "knowsLanguage": ["nl", "en", "uk", "ru"],
         "knowsAbout": [
-          "Multi-tenant SaaS", "TypeScript", "Angular", "Next.js", "Vue.js",
-          "Node.js", "tRPC", "Prisma", "PostgreSQL", "PHP", "Python", "C#"
+          "Multi-tenant SaaS", "TypeScript", "Next.js", "Angular", "Vue.js",
+          "Node.js", "tRPC", "Prisma", "PostgreSQL", "Supabase", "PHP", "Python", "C#"
         ]
       },
       {
@@ -67,6 +67,7 @@
         "@id": "https://promobo.nl/#organization",
         "name": "Promobo",
         "url": "https://promobo.nl",
+        "email": "mailto:info@promobo.nl",
         "description": "Subscription websites for entrepreneurs and clubs in Twente: one fixed monthly price instead of hourly billing, and the site just keeps running.",
         "areaServed": "Twente, Netherlands",
         "founder": [
@@ -86,240 +87,357 @@
   </script>
 </head>
 <body>
-  <div class="blob" aria-hidden="true"></div>
-  <div class="grain" aria-hidden="true"></div>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Direct naar de inhoud</a>
+  <div class="progress" aria-hidden="true"></div>
 
   <header class="nav">
-    <a class="nav-logo" href="#top">NSN<span class="accent">.</span></a>
-    <nav aria-label="Main navigation">
-      <a href="#about" data-i18n="nav.about">Over mij</a>
-      <a href="#work" data-i18n="nav.work">Werk</a>
-      <a href="#skills" data-i18n="nav.skills">Skills</a>
+    <a class="nav-logo" href="#main">NSN<span class="accent">.</span></a>
+    <nav aria-label="Hoofdnavigatie" data-i18n-aria="nav.ariaMain">
+      <a href="#aanbod" data-i18n="nav.offer">Aanbod</a>
+      <a href="#werk" data-i18n="nav.work">Werk</a>
+      <a href="#projecten" data-i18n="nav.projects">Projecten</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
-    <div class="lang-switch" role="group" aria-label="Taal / Language">
-      <button type="button" data-lang="nl" aria-pressed="true">NL</button>
-      <button type="button" data-lang="en" aria-pressed="false">EN</button>
-      <button type="button" data-lang="uk" aria-pressed="false">UA</button>
-      <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+    <div class="nav-actions">
+      <div class="lang-switch" role="group" aria-label="Taal / Language">
+        <button type="button" data-lang="nl" aria-pressed="true">NL</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="uk" aria-pressed="false" aria-label="Українська">UA</button>
+        <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+      </div>
+      <a class="btn btn-primary btn-nav" href="#contact" data-track="cta-header" data-i18n="nav.cta">Plan een kennismaking</a>
     </div>
   </header>
 
-  <main id="top">
-    <!-- ============ HERO ============ -->
+  <main id="main" tabindex="-1">
+
+    <!-- ============ HERO: het aanbod, naam als byline ============ -->
     <section class="hero">
-      <p class="hero-kicker reveal" data-i18n="hero.kicker">Full stack developer · Nederland</p>
+      <p class="hero-byline reveal">Nikita Skliarov-Napriahlo · <span data-i18n="hero.byline">full stack developer · Twente</span></p>
       <h1 class="hero-title">
-        <span class="reveal">Nikita</span>
-        <span class="reveal outline">Skliarov-</span>
-        <span class="reveal">Napriahlo</span>
+        <span class="reveal" data-i18n="hero.title1">Een website die af is,</span>
+        <span class="reveal" data-i18n="hero.title2">live staat en gewoon blijft draaien.</span>
       </h1>
-      <p class="hero-sub reveal" data-i18n="hero.sub" data-i18n-html>
-        Ik bouw multi-tenant SaaS-platformen, van databaseschema tot de laatste
-        pixel. Op dit moment werk ik aan freight-tech bij
-        <a href="https://thefreighthero.nl" target="_blank" rel="noopener">The&nbsp;Freight&nbsp;Hero&nbsp;B.V.</a>
+      <p class="hero-sub reveal" data-i18n="hero.sub">
+        Overdag bouw ik logistieksoftware bij The Freight Hero. Daarnaast run
+        ik Promobo, samen met Jordi Raanhuis: wij bouwen en onderhouden
+        websites voor ondernemers en clubs in Twente, voor een vast bedrag per
+        maand. Geen uurtje-factuurtje.
       </p>
       <div class="hero-cta reveal">
-        <a class="btn btn-primary" href="#work" data-i18n="hero.ctaWork">Bekijk mijn werk</a>
-        <a class="btn btn-ghost" href="#contact" data-i18n="hero.ctaContact">Stuur een bericht</a>
+        <a class="btn btn-primary" href="#contact" data-track="cta-hero" data-i18n="hero.ctaPrimary">Plan een kennismaking</a>
+        <a class="btn btn-ghost" href="#live" data-i18n="hero.ctaSecondary">Bekijk wat er live staat</a>
       </div>
-      <div class="hero-scroll" aria-hidden="true" data-i18n="hero.scroll">scroll ↓</div>
+      <p class="hero-proof reveal" data-i18n="hero.proof">Alles op deze pagina staat live. Klik maar.</p>
     </section>
 
-    <!-- ============ MARQUEE ============ -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>TypeScript</span><span>·</span><span>Angular</span><span>·</span><span>Next.js</span><span>·</span><span>Vue</span><span>·</span><span>tRPC</span><span>·</span>
-        <span>Prisma</span><span>·</span><span>PostgreSQL</span><span>·</span><span>Node.js</span><span>·</span>
-        <span>PHP</span><span>·</span><span>Python</span><span>·</span><span>C#</span><span>·</span><span>Tailwind</span><span>·</span><span>Vercel</span><span>·</span>
-        <span>TypeScript</span><span>·</span><span>Angular</span><span>·</span><span>Next.js</span><span>·</span><span>Vue</span><span>·</span><span>tRPC</span><span>·</span>
-        <span>Prisma</span><span>·</span><span>PostgreSQL</span><span>·</span><span>Node.js</span><span>·</span>
-        <span>PHP</span><span>·</span><span>Python</span><span>·</span><span>C#</span><span>·</span><span>Tailwind</span><span>·</span><span>Vercel</span><span>·</span>
-      </div>
-    </div>
+    <!-- ============ LIVE-CHECK: statusregels in plaats van een marquee ============ -->
+    <section id="live" class="ledger" aria-labelledby="ledger-title">
+      <h2 id="ledger-title" class="ledger-head">
+        <span aria-hidden="true">$ </span><span data-i18n="live.title">status</span>
+        <span class="ledger-date"><span data-i18n="live.checked">voor het laatst gecheckt op</span> 14-08-2026</span>
+      </h2>
+      <ul class="ledger-list" role="list">
+        <li><a href="https://promobo.nl" target="_blank" rel="noopener"><span class="ledger-domain">promobo.nl</span><span class="ledger-desc" data-i18n="live.d1">websites op abonnement, ons bureau</span><span class="ledger-status">live</span></a></li>
+        <li><a href="https://moniquehoedemaker.com" target="_blank" rel="noopener"><span class="ledger-domain">moniquehoedemaker.com</span><span class="ledger-desc" data-i18n="live.d2">praktijk voor relatie- en gezinstherapie, Hengelo</span><span class="ledger-status">live</span></a></li>
+        <li><a href="https://www.primaautos.nl" target="_blank" rel="noopener"><span class="ledger-domain">primaautos.nl</span><span class="ledger-desc" data-i18n="live.d3">autobedrijf</span><span class="ledger-status">live</span></a></li>
+        <li><a href="https://careofyh.nl" target="_blank" rel="noopener"><span class="ledger-domain">careofyh.nl</span><span class="ledger-desc" data-i18n="live.d4">ambulante zorgaanbieder, Hengelo</span><span class="ledger-status">live</span></a></li>
+        <li><a href="https://jordiraanhuis.nl" target="_blank" rel="noopener"><span class="ledger-domain">jordiraanhuis.nl</span><span class="ledger-desc" data-i18n="live.d5">de site van m'n compagnon</span><span class="ledger-status">live</span></a></li>
+        <li><a href="https://goonys.nl" target="_blank" rel="noopener"><span class="ledger-domain">goonys.nl</span><span class="ledger-desc" data-i18n="live.d6">het team en de tooling achter ons klantwerk</span><span class="ledger-status">live</span></a></li>
+        <li><a href="https://support.goonys.nl" target="_blank" rel="noopener"><span class="ledger-domain">support.goonys.nl</span><span class="ledger-desc" data-i18n="live.d7">ons klantportaal, achter een login</span><span class="ledger-status">live</span></a></li>
+        <li><a href="https://personal-finance-five-nu.vercel.app" target="_blank" rel="noopener"><span class="ledger-domain">personal-finance</span><span class="ledger-desc" data-i18n="live.d8">eigen budget-app</span><span class="ledger-status">live</span></a></li>
+        <li><a href="https://tfh-review.vercel.app" target="_blank" rel="noopener"><span class="ledger-domain">tfh-review</span><span class="ledger-desc" data-i18n="live.d9">reviewfunnel voor The Freight Hero</span><span class="ledger-status">live</span></a></li>
+      </ul>
+      <p class="ledger-outro">
+        <span data-i18n="live.outro">Zoiets ook nodig?</span>
+        <a href="#aanbod" data-i18n="live.outroLink">Zo werkt het abonnement.</a>
+      </p>
+    </section>
 
-    <!-- ============ ABOUT ============ -->
-    <section id="about" class="section">
-      <h2 class="section-title reveal"><span class="section-num">01</span><span data-i18n="about.title">Over mij</span></h2>
-      <div class="about-grid">
-        <p class="about-lead reveal" data-i18n="about.lead">
-          Ik ben een full stack developer die het liefst de hele stack in eigen
-          hand heeft: datamodel, API, UI en deployment.
-        </p>
-        <div class="about-body reveal">
-          <p data-i18n="about.p1">
-            Overdag werk ik aan een multi-tenant platform voor expediteurs bij
-            The Freight Hero: offertes, tarieven, de levenscyclus van zendingen
-            en de interne tooling die alles draaiend houdt. Type-safe vanaf de
-            database: Prisma, tRPC en Angular.
-          </p>
-          <p data-i18n="about.p2">
-            Buiten werktijd run ik samen met Jordi Raanhuis Promobo, en er ligt
-            altijd wel een eigen project op tafel. De laatste tijd: een
-            budget-app en een Telegram-bot.
-          </p>
+    <!-- ============ PROMOBO: het aanbod, als enige sectie licht ============ -->
+    <section id="aanbod" class="offer">
+      <div class="offer-inner">
+        <p class="offer-kicker">Promobo · <span data-i18n="offer.kicker">websites op abonnement</span></p>
+        <div class="offer-grid">
+          <div class="offer-pitch">
+            <h2 data-i18n="offer.title">Jouw site geregeld, voor een vast bedrag per maand.</h2>
+            <p data-i18n="offer.p1">
+              Een goede website is nooit af. Teksten veranderen, techniek
+              veroudert, en de bouwer van toen neemt niet meer op. Daarom werken
+              wij niet met losse facturen maar met een abonnement: wij bouwen je
+              site, zetten hem live en houden hem daarna gewoon draaiend.
+            </p>
+            <p data-i18n="offer.p2">
+              Promobo run ik samen met Jordi Raanhuis, vanuit Twente, met het
+              team en de tooling van Goonys. Wat het precies kost hangt af van
+              wat je nodig hebt; dat hoor je in het eerste gesprek, en dat
+              gesprek heb je binnen een werkdag.
+            </p>
+            <ol class="offer-steps" role="list">
+              <li>
+                <h3 data-i18n="offer.s1t">Vertel wat je nodig hebt</h3>
+                <p data-i18n="offer.s1p">Eén mail of belletje is genoeg. Geen offertecircus.</p>
+              </li>
+              <li>
+                <h3 data-i18n="offer.s2t">Wij bouwen en zetten live</h3>
+                <p data-i18n="offer.s2p">Je ziet tussenversies, dus geen verrassing bij oplevering.</p>
+              </li>
+              <li>
+                <h3 data-i18n="offer.s3t">En daarna blijft het draaien</h3>
+                <p data-i18n="offer.s3p">Updates, aanpassingen en hosting zitten in het abonnement.</p>
+              </li>
+            </ol>
+          </div>
+          <aside class="offer-box">
+            <h3 data-i18n="offer.boxTitle">Wat zit erin</h3>
+            <ul role="list">
+              <li data-i18n="offer.b1">Ontwerp en bouw</li>
+              <li data-i18n="offer.b2">Hosting en eigen domein</li>
+              <li data-i18n="offer.b3">Aanpassingen en onderhoud</li>
+              <li data-i18n="offer.b4">Support in vier talen</li>
+              <li data-i18n="offer.b5">Geen uurtje-factuurtje</li>
+            </ul>
+            <a class="btn btn-dark" href="#contact" data-track="cta-aanbod" data-i18n="offer.cta">Vraag vrijblijvend een prijs</a>
+            <a class="offer-more" href="https://promobo.nl" target="_blank" rel="noopener" data-i18n="offer.more">meer op promobo.nl</a>
+          </aside>
         </div>
       </div>
     </section>
 
-    <!-- ============ WORK ============ -->
-    <section id="work" class="section">
-      <h2 class="section-title reveal"><span class="section-num">02</span><span data-i18n="work.title">Uitgelicht werk</span></h2>
-      <div class="cards">
-        <article class="card reveal">
-          <div class="card-tag" data-i18n="work.tfh.tag">Freight tech · SaaS</div>
+    <!-- ============ DOSSIERS: het zware werk ============ -->
+    <section id="werk" class="dossiers">
+      <h2 class="section-title reveal"><span class="section-num" aria-hidden="true">01</span><span data-i18n="work.title">Het zware werk</span></h2>
+      <article class="dossier reveal">
+        <div class="dossier-body">
+          <p class="dossier-num" aria-hidden="true"><span data-i18n="work.dossierWord">dossier</span> 01</p>
           <h3>The Freight Hero Platform</h3>
           <p data-i18n="work.tfh.text">
             Multi-tenant platform voor expediteurs: direct offertes rekenen, een
-            tariefmotor met ruim 100 kostensoorten, zendingsbeheer en
+            tariefmotor met tientallen kostensoorten, zendingsbeheer en
             Nederlandse btw-logica. Vervangt de spreadsheets waar de meeste
             expediteurs nog in werken.
           </p>
-          <ul class="card-stack">
-            <li>Angular</li><li>tRPC</li><li>Prisma</li><li>PostgreSQL</li>
-          </ul>
-          <a class="card-link" id="tfhLink" href="https://thefreighthero.nl" target="_blank" rel="noopener">thefreighthero.nl →</a>
-        </article>
-
-        <article class="card reveal">
-          <div class="card-tag" data-i18n="work.promo.tag">Partnerschap</div>
-          <h3>Promobo</h3>
-          <p data-i18n="work.promo.text">
-            Promobo run ik samen met Jordi Raanhuis naast ons werk: websites op
-            abonnement voor ondernemers en clubs in Twente. Eén vast bedrag per
-            maand, en de site blijft gewoon draaien. Uurtje-factuurtje doen we
-            niet.
-          </p>
-          <ul class="card-stack">
-            <li>Web</li><li>Subscriptions</li><li>Hosting</li>
-          </ul>
-          <a class="card-link" href="https://promobo.nl" target="_blank" rel="noopener">promobo.nl →</a>
-        </article>
-
-        <article class="card reveal">
-          <div class="card-tag" data-i18n="work.ticket.tag">Goonys · supporttool</div>
-          <h3 data-i18n="work.ticket.title">Goonys Ticket Portal</h3>
+          <a class="dossier-link" id="tfhLink" href="https://thefreighthero.nl" target="_blank" rel="noopener">thefreighthero.nl</a>
+        </div>
+        <dl class="dossier-meta">
+          <div><dt data-i18n="work.meta.role">rol</dt><dd data-i18n="work.tfh.role">full stack developer</dd></div>
+          <div><dt>stack</dt><dd>Next.js · tRPC · Prisma · PostgreSQL</dd></div>
+          <div><dt data-i18n="work.meta.scale">schaal</dt><dd data-i18n="work.tfh.scale">78 tRPC-routers, 23 databaseschema's</dd></div>
+          <div><dt>status</dt><dd data-i18n="work.tfh.status">in productie</dd></div>
+        </dl>
+      </article>
+      <article class="dossier reveal">
+        <div class="dossier-body">
+          <p class="dossier-num" aria-hidden="true"><span data-i18n="work.dossierWord">dossier</span> 02</p>
+          <h3>Goonys Ticket Portal + browserextensie</h3>
           <p data-i18n="work.ticket.text">
-            Multi-tenant ticketsysteem van Goonys: elke query, route en view
-            ziet alleen de eigen klant. De bijbehorende browserextensie stuurt
-            bij een melding automatisch een screenshot, consolelogs en
-            netwerkdata mee. Draait als eerste bij The Freight Hero.
+            Multi-tenant ticketsysteem: elke query, route en view ziet alleen de
+            eigen klant. De browserextensie stuurt bij een melding automatisch
+            een screenshot, DOM-snapshot en consolelogs mee; netwerkdata alleen
+            als de melder dat zelf aanzet. Draait als eerste bij The Freight
+            Hero, via enterprise force-install.
           </p>
-          <ul class="card-stack">
-            <li>Next.js</li><li>TypeScript</li><li>Multi-tenancy</li><li>WXT</li>
-          </ul>
-          <a class="card-link" href="https://support.goonys.nl" target="_blank" rel="noopener">support.goonys.nl →</a>
-        </article>
-
-        <article class="card reveal">
-          <div class="card-tag" data-i18n="work.prim.tag">Klantwerk</div>
-          <h3>Prima Auto's</h3>
-          <p data-i18n="work.prim.text">
-            Website voor een Nederlands autobedrijf. Gebouwd, opgeleverd en in
-            onderhoud, zodat de eigenaar er zelf niet naar om hoeft te kijken.
-          </p>
-          <ul class="card-stack">
-            <li>Next.js</li><li>Supabase</li>
-          </ul>
-          <a class="card-link" href="https://primaautos.nl" target="_blank" rel="noopener">primaautos.nl →</a>
-        </article>
-
-        <article class="card reveal">
-          <div class="card-tag" data-i18n="work.care.tag">Goonys · klantwerk</div>
-          <h3>Care of from your Heart</h3>
-          <p data-i18n="work.care.text">
-            Onepager voor een ambulante zorgaanbieder in Hengelo. Ik bouw eraan
-            mee binnen Goonys: Angular 21, Tailwind en hosting op Vercel.
-          </p>
-          <ul class="card-stack">
-            <li>Angular</li><li>Tailwind</li><li>Vercel</li>
-          </ul>
-          <a class="card-link" href="https://careofyh.nl" target="_blank" rel="noopener">careofyh.nl →</a>
-        </article>
-
-        <article class="card reveal">
-          <div class="card-tag" data-i18n="work.moni.tag">Goonys · klantwerk</div>
-          <h3>Praktijk Monique Hoedemaker</h3>
-          <p data-i18n="work.moni.text">
-            Website voor een praktijk voor relatie- en gezinstherapie in
-            Hengelo. Binnen Goonys samen gebouwd en live gezet: Monique past
-            haar teksten zelf aan in Sanity, en berichten uit het
-            contactformulier komen via Resend rechtstreeks in haar mailbox.
-          </p>
-          <ul class="card-stack">
-            <li>Angular</li><li>Sanity</li><li>Resend</li><li>Vercel</li>
-          </ul>
-          <a class="card-link" href="https://moniquehoedemaker.com" target="_blank" rel="noopener">moniquehoedemaker.com →</a>
-        </article>
-
-      </div>
-      <p class="work-outro reveal" data-i18n="work.outro" data-i18n-html>
-        Meer klantcases staan op
-        <a href="https://promobo.nl" target="_blank" rel="noopener">promobo.nl</a>.
-        Samen iets bouwen? Mail
-        <a href="mailto:info@promobo.nl">info@promobo.nl</a>.
+          <a class="dossier-link" href="https://support.goonys.nl" target="_blank" rel="noopener">support.goonys.nl</a>
+        </div>
+        <dl class="dossier-meta">
+          <div><dt data-i18n="work.meta.role">rol</dt><dd data-i18n="work.ticket.role">bedenker en bouwer</dd></div>
+          <div><dt>stack</dt><dd>Next.js · TypeScript · WXT</dd></div>
+          <div><dt>browsers</dt><dd>Chrome · Edge · Firefox</dd></div>
+          <div><dt>status</dt><dd data-i18n="work.ticket.status">dagelijks in gebruik</dd></div>
+        </dl>
+      </article>
+      <p class="dossiers-outro reveal">
+        <span data-i18n="work.outro">Zulke systemen bouw ik overdag. Daarbij vergeleken is jouw website bijna ontspanning.</span>
+        <a href="#contact" data-i18n="work.outroLink">Plan een kennismaking.</a>
       </p>
     </section>
 
-    <!-- ============ SKILLS ============ -->
-    <section id="skills" class="section">
-      <h2 class="section-title reveal"><span class="section-num">03</span><span data-i18n="skills.title">Skills &amp; stack</span></h2>
-      <div class="skills reveal">
-        <div class="skill-group">
-          <h3 data-i18n="skills.frontend">Frontend</h3>
-          <ul><li>TypeScript / JavaScript</li><li>Angular</li><li>React / Next.js</li><li>Vue / Nuxt</li><li>HTML &amp; CSS</li><li>Tailwind CSS</li></ul>
+    <!-- ============ PROJECTINDEX: de hele plank ============ -->
+    <section id="projecten" class="index">
+      <h2 class="section-title reveal"><span class="section-num" aria-hidden="true">02</span><span data-i18n="index.title">Projectindex</span></h2>
+      <div class="index-group reveal">
+        <h3 class="index-groupname">klantwerk/</h3>
+        <div class="index-scroll" tabindex="0" role="region" aria-label="klantwerk">
+          <table>
+            <thead><tr><th scope="col"><span class="visually-hidden" data-i18n="index.thProject">Project</span></th><th scope="col"><span class="visually-hidden" data-i18n="index.thWhat">Wat</span></th><th scope="col"><span class="visually-hidden">Stack</span></th><th scope="col"><span class="visually-hidden">Link</span></th></tr></thead>
+            <tbody>
+              <tr>
+                <td>Praktijk Monique Hoedemaker</td>
+                <td data-i18n="index.moni">Relatie- en gezinstherapie, Hengelo. Monique past haar teksten zelf aan in Sanity.</td>
+                <td class="index-stack">Angular · Sanity · Resend</td>
+                <td><a href="https://moniquehoedemaker.com" target="_blank" rel="noopener">moniquehoedemaker.com</a></td>
+              </tr>
+              <tr>
+                <td>Prima Auto's</td>
+                <td data-i18n="index.prim">Autobedrijf. Gebouwd, opgeleverd en in onderhoud; de eigenaar hoeft er niet naar om te kijken.</td>
+                <td class="index-stack">Next.js · Supabase</td>
+                <td><a href="https://www.primaautos.nl" target="_blank" rel="noopener">primaautos.nl</a></td>
+              </tr>
+              <tr>
+                <td>Care of from your Heart</td>
+                <td data-i18n="index.care">Onepager voor een ambulante zorgaanbieder in Hengelo.</td>
+                <td class="index-stack">Angular 21 · Tailwind</td>
+                <td><a href="https://careofyh.nl" target="_blank" rel="noopener">careofyh.nl</a></td>
+              </tr>
+              <tr>
+                <td>Jordi Raanhuis</td>
+                <td data-i18n="index.jordi">Sprekerssite van m'n compagnon, met voorgerenderde routes voor SEO.</td>
+                <td class="index-stack">Angular · prerendering</td>
+                <td><a href="https://jordiraanhuis.nl" target="_blank" rel="noopener">jordiraanhuis.nl</a></td>
+              </tr>
+              <tr>
+                <td>De Tassenkoning</td>
+                <td data-i18n="index.dtk">3D-productconfigurator voor een tassenwinkel.</td>
+                <td class="index-stack">Angular · 3D</td>
+                <td><span class="index-private" data-i18n="index.wip">in ontwikkeling</span></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="skill-group">
-          <h3 data-i18n="skills.backend">Backend</h3>
-          <ul><li>Node.js</li><li>tRPC</li><li>PHP / Laravel</li><li>Python</li><li>C#</li></ul>
+      </div>
+      <div class="index-group reveal">
+        <h3 class="index-groupname">eigen/</h3>
+        <div class="index-scroll" tabindex="0" role="region" aria-label="eigen">
+          <table>
+            <thead><tr><th scope="col"><span class="visually-hidden" data-i18n="index.thProject">Project</span></th><th scope="col"><span class="visually-hidden" data-i18n="index.thWhat">Wat</span></th><th scope="col"><span class="visually-hidden">Stack</span></th><th scope="col"><span class="visually-hidden">Link</span></th></tr></thead>
+            <tbody>
+              <tr>
+                <td>Finance Foresee</td>
+                <td data-i18n="index.fin">Budget-app die één vraag beantwoordt: hoeveel kan ik vandaag uitgeven?</td>
+                <td class="index-stack">Next.js · Supabase</td>
+                <td><a href="https://personal-finance-five-nu.vercel.app" target="_blank" rel="noopener">live</a></td>
+              </tr>
+              <tr>
+                <td>Reviewfunnel</td>
+                <td data-i18n="index.review">Klanten in dertig seconden naar een geplaatste review, zonder backend.</td>
+                <td class="index-stack">HTML · <span data-i18n="index.noBuild">geen build</span></td>
+                <td><a href="https://tfh-review.vercel.app" target="_blank" rel="noopener">live</a></td>
+              </tr>
+              <tr>
+                <td>Goonys Analytics</td>
+                <td data-i18n="index.analytics">Cookieloze multi-tenant analytics voor alle Goonys-sites.</td>
+                <td class="index-stack">Supabase RLS · JS</td>
+                <td><span class="index-private" data-i18n="index.private">privé</span></td>
+              </tr>
+              <tr>
+                <td>Personal Jarvis</td>
+                <td data-i18n="index.jarvis">Telegram-assistent die vrije tekst omzet in acties en herinneringen.</td>
+                <td class="index-stack">Python · LLM</td>
+                <td><span class="index-private" data-i18n="index.private">privé</span></td>
+              </tr>
+              <tr>
+                <td>Story-engine</td>
+                <td data-i18n="index.story">Vertakkende verhalen op Telegram, met betalingen via Telegram Stars.</td>
+                <td class="index-stack">Python · YAML-DSL</td>
+                <td><span class="index-private" data-i18n="index.private">privé</span></td>
+              </tr>
+              <tr>
+                <td>cfmigrate</td>
+                <td data-i18n="index.cf">DNS-migraties naar Cloudflare: audit, plan, apply, verify.</td>
+                <td class="index-stack">Python</td>
+                <td><span class="index-private" data-i18n="index.private">privé</span></td>
+              </tr>
+              <tr>
+                <td data-i18n="index.thisName">Deze site</td>
+                <td data-i18n="index.this">Vier talen, strenge CSP, cookieloos, met de hand geschreven.</td>
+                <td class="index-stack">HTML · CSS · JS</td>
+                <td><a href="https://github.com/Nikita-Skliarov/portfolio-website" target="_blank" rel="noopener" data-i18n="index.source">broncode</a></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="skill-group">
-          <h3 data-i18n="skills.data">Data &amp; infra</h3>
-          <ul><li>PostgreSQL</li><li>MySQL</li><li>SQLite</li><li>Prisma</li><li>Supabase</li><li>Docker</li><li>Vercel</li><li>Git / CI</li></ul>
-        </div>
-        <div class="skill-group">
-          <h3 data-i18n="skills.langs">Talen</h3>
-          <ul>
-            <li data-i18n="skills.lang1">Nederlands</li>
-            <li data-i18n="skills.lang2">Engels</li>
-            <li data-i18n="skills.lang3">Oekraïens</li>
-            <li data-i18n="skills.lang4">Russisch</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3 data-i18n="skills.focus">Focus</h3>
-          <ul>
-            <li data-i18n="skills.focus1">Multi-tenant SaaS</li>
-            <li data-i18n="skills.focus2">Type-safe API's</li>
-            <li data-i18n="skills.focus3">Prijs- en tariefengines</li>
-            <li data-i18n="skills.focus4">Projectarchitectuur</li>
-            <li data-i18n="skills.focus5">Schaalbaarheid</li>
-            <li data-i18n="skills.focus6">Performance</li>
-          </ul>
-        </div>
+      </div>
+      <p class="index-outro reveal">
+        <span data-i18n="index.outro">Staat jouw site hier volgend jaar tussen?</span>
+        <a href="#contact" data-i18n="index.outroLink">Een gesprek kost niets.</a>
+      </p>
+    </section>
+
+    <!-- ============ CLAIMS MET BEWIJS ============ -->
+    <section class="claims">
+      <h2 class="section-title reveal"><span class="section-num" aria-hidden="true">03</span><span data-i18n="claims.title">Waarom dit klopt</span></h2>
+      <ol class="claims-list" role="list">
+        <li class="reveal">
+          <p class="claim" data-i18n="claims.c1">Ik bouw de hele stack zelf, van databaseschema tot laatste pixel.</p>
+          <p class="claim-proof"><span data-i18n="claims.proofLabel">bewijs:</span> <a href="#werk" data-i18n="claims.p1">dossier 01 hierboven</a></p>
+        </li>
+        <li class="reveal">
+          <p class="claim" data-i18n="claims.c2">Wat wij opleveren blijft draaien.</p>
+          <p class="claim-proof"><span data-i18n="claims.proofLabel">bewijs:</span> <a href="#live" data-i18n="claims.p2">de statusregels bovenaan, allemaal live</a></p>
+        </li>
+        <li class="reveal">
+          <p class="claim" data-i18n="claims.c3">Deze site is met de hand geschreven: HTML, CSS en JavaScript, geen build-stap.</p>
+          <p class="claim-proof"><span data-i18n="claims.proofLabel">bewijs:</span> <a href="https://github.com/Nikita-Skliarov/portfolio-website" target="_blank" rel="noopener" data-i18n="claims.p3">de broncode staat op GitHub</a></p>
+        </li>
+        <li class="reveal">
+          <p class="claim" data-i18n="claims.c4">Je kunt ons bereiken in het Nederlands, Engels, Oekraïens en Russisch.</p>
+          <p class="claim-proof"><span data-i18n="claims.proofLabel">bewijs:</span> <span data-i18n="claims.p4">de taalknoppen rechtsboven doen het echt</span></p>
+        </li>
+        <li class="reveal">
+          <p class="claim" data-i18n="claims.c5">Type-safe van database tot formulier.</p>
+          <p class="claim-proof"><span data-i18n="claims.proofLabel">bewijs:</span> <a href="#werk" data-i18n="claims.p5">dossier 01 en 02</a></p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ EVEN VOORSTELLEN: de brief ============ -->
+    <section class="letter">
+      <div class="letter-inner reveal">
+        <p data-i18n="letter.p1">
+          Ik ben Nikita. Overdag werk ik als full stack developer bij The
+          Freight Hero B.V. aan een platform voor expediteurs. 's Avonds bouw
+          ik met Jordi Raanhuis onder de naam Promobo websites voor ondernemers
+          hier in Twente.
+        </p>
+        <p data-i18n="letter.p2">
+          Van oorsprong kom ik uit Oekraïne; inmiddels ben ik hier thuis. En er
+          ligt altijd wel een eigen project op tafel: een budget-app, of de
+          Telegram-bot die m'n vrouw elke ochtend een compliment stuurt. Bouwen
+          stopt bij mij niet om vijf uur.
+        </p>
+        <p class="letter-sign" aria-hidden="true">— Nikita Skliarov-Napriahlo</p>
       </div>
     </section>
 
-    <!-- ============ CONTACT ============ -->
-    <section id="contact" class="section contact">
-      <h2 class="section-title reveal"><span class="section-num">04</span><span data-i18n="contact.title">Contact</span></h2>
-      <p class="contact-lead reveal" data-i18n="contact.lead">
-        Gewoon mailen. Of het nou om een project gaat of om een vacature, ik
-        schrijf altijd terug.
-      </p>
-      <a class="contact-mail reveal" href="mailto:nikitaskliarovnapriahlo@gmail.com">
-        nikitaskliarovnapriahlo@gmail.com
-      </a>
-      <div class="contact-links reveal">
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/nikita-skliarov-napriahlo-46a2752b1/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn btn-ghost" href="https://github.com/Nikita-Skliarov" target="_blank" rel="noopener">GitHub</a>
+    <!-- ============ CONTACT: twee deuren ============ -->
+    <section id="contact" class="contact">
+      <h2 class="section-title reveal"><span class="section-num" aria-hidden="true">04</span><span data-i18n="contact.title">Contact</span></h2>
+      <div class="doors">
+        <div class="door door-promobo reveal">
+          <h3 data-i18n="contact.clientTitle">Een website nodig?</h3>
+          <ul class="door-notes" role="list">
+            <li data-i18n="contact.n1">Je mailt met Nikita of Jordi zelf, niet met een studio.</li>
+            <li data-i18n="contact.n2">Binnen één werkdag antwoord.</li>
+            <li data-i18n="contact.n3">Liever bellen? Zet je nummer in de mail, dan bellen wij terug.</li>
+          </ul>
+          <a class="btn btn-primary btn-big" id="promoboMail" data-track="cta-contact-promobo" href="mailto:info@promobo.nl?subject=Website-aanvraag%20via%20nikita-skliarov-napriahlo.nl">
+            <span data-i18n="contact.clientCta">Mail</span> info@promobo.nl
+          </a>
+        </div>
+        <div class="door door-direct reveal">
+          <h3 data-i18n="contact.directTitle">Iets technisch, een vacature of gewoon hallo?</h3>
+          <p data-i18n="contact.directLead">Mail me direct, ik schrijf altijd terug.</p>
+          <a class="door-mail" href="mailto:nikitaskliarovnapriahlo@gmail.com">nikitaskliarovnapriahlo@gmail.com</a>
+          <div class="door-links">
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/nikita-skliarov-napriahlo-46a2752b1/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-ghost" href="https://github.com/Nikita-Skliarov" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
+  <div class="cta-bar">
+    <a class="btn btn-primary" href="#contact" data-track="cta-mobile-bar" data-i18n="nav.cta">Plan een kennismaking</a>
+  </div>
+
   <footer class="footer">
-    <span>© <span id="year">2026</span> Nikita Skliarov-Napriahlo</span>
-    <span class="footer-note" data-i18n="footer.note">Met de hand gecodeerd. Geen framework aan te pas gekomen.</span>
+    <span>© <span id="year">2026</span> Nikita Skliarov-Napriahlo · Promobo</span>
+    <span class="footer-note"><span data-i18n="footer.note">Met de hand geschreven in HTML, CSS en JS. Geen build-stap.</span> <a href="https://github.com/Nikita-Skliarov/portfolio-website" target="_blank" rel="noopener" data-i18n="footer.source">Bekijk gerust de broncode.</a></span>
+    <span class="footer-links">
+      <a href="https://promobo.nl" target="_blank" rel="noopener">promobo.nl</a>
+      <a href="https://goonys.nl" target="_blank" rel="noopener">goonys.nl</a>
+    </span>
   </footer>
 
   <!-- Language tip for English-browser visitors (shown by i18n.js) -->
