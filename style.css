@@ -308,6 +308,16 @@ main, .nav, .footer { position: relative; z-index: 2; }
 
 .card-link:hover, .card-link:focus-visible { text-decoration: underline; }
 
+.work-outro {
+  margin-top: 1.6rem;
+  max-width: 72rem;
+  color: var(--muted);
+  font-size: 0.97rem;
+}
+
+.work-outro a { color: var(--cyan); text-decoration: none; }
+.work-outro a:hover, .work-outro a:focus-visible { text-decoration: underline; }
+
 /* ============ skills ============ */
 .skills {
   display: grid;

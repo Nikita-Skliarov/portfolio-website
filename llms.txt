@@ -9,7 +9,7 @@
 - Prima Auto's: website for a Dutch automotive business. https://primaautos.nl
 - Care of from your Heart: one-page site for an outpatient care provider in Hengelo, built within Goonys. https://careofyh.nl
 - Praktijk Monique Hoedemaker: website for a couples and family therapy practice in Hengelo, built and launched together within Goonys. The owner edits her own content in Sanity. https://moniquehoedemaker.com
-- Promobo: subscription websites for entrepreneurs and clubs in Twente, run in partnership with Jordi Raanhuis. One fixed monthly price instead of hourly billing, and the site just keeps running. https://promobo.nl
+- Promobo: subscription websites for entrepreneurs and clubs in Twente, run in partnership with Jordi Raanhuis. One fixed monthly price instead of hourly billing, and the site just keeps running. More client cases and collaboration inquiries via https://promobo.nl or info@promobo.nl
 
 ## Stack
 
