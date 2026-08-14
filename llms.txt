@@ -11,17 +11,16 @@
 - Praktijk Monique Hoedemaker: couples and family therapy practice in Hengelo. The owner edits her own content in Sanity; contact form mail arrives via Resend. Angular. https://moniquehoedemaker.com
 - Prima Auto's: car dealership website, built, delivered and maintained. Next.js + Supabase. https://www.primaautos.nl
 - Care of from your Heart: one-page site for an outpatient care provider in Hengelo. Angular 21 + Tailwind. https://careofyh.nl
-- Jordi Raanhuis: speaker site of the Promobo co-founder, prerendered routes for SEO. Angular. https://jordiraanhuis.nl
 - De Tassenkoning: 3D product configurator for a bag store (in development). Angular.
 
 ## Heavy engineering
 
 - The Freight Hero Platform: multi-tenant freight forwarding SaaS (instant quoting, tariff engine with dozens of charge types, shipment lifecycle, Dutch VAT logic). Next.js, tRPC, Prisma, PostgreSQL. https://thefreighthero.nl / https://thefreighthero.com
-- Goonys Ticket Portal + browser extension: multi-tenant ticket system; the extension automatically attaches a screenshot, DOM snapshot and console logs to a report (network capture is opt-in). In daily use at The Freight Hero via enterprise force-install. Next.js, TypeScript, WXT. https://support.goonys.nl
+- Goonys Ticket Portal + browser extension: multi-tenant ticket system; the extension automatically attaches a screenshot, DOM snapshot and console logs to a report (network capture is opt-in). In daily use at The Freight Hero via enterprise force-install. Next.js, TypeScript, WXT.
 
 ## Own products
 
-- Finance Foresee: budgeting app answering one question — how much can I spend today? Next.js + Supabase. https://personal-finance-five-nu.vercel.app
+- Finance Foresee: budgeting app answering one question — how much can I spend today? Next.js + Supabase (private).
 - Review funnel: gets customers to a posted review in thirty seconds, no backend. https://tfh-review.vercel.app
 - Goonys Analytics: cookieless multi-tenant analytics for all Goonys sites (private).
 - Personal Jarvis: Telegram assistant that turns free text into actions and reminders (private).
